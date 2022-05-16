@@ -1,18 +1,18 @@
 import "./style.css";
-import printMe from "./print";
 
-function component() {
-  const element = document.createElement("div");
-  const btn = document.createElement("button");
+const root = document.getElementById("root");
+const href = document.createElement("a");
+const icon = document.createElement("div");
 
-  element.textContent = "Hello In WebPack";
-  element.classList.add("hello");
+icon.classList.add("icon", "rotating");
 
-  btn.innerHTML = "hot reloadddd!";
-  btn.onclick = printMe;
+href.setAttribute("target", "_blank");
+href.setAttribute(
+  "href",
+  "https://www.google.com/search?client=firefox-b-d&q=js+add+attribute+to+element",
+);
 
-  element.appendChild(btn);
-  return element;
-}
+root.classList.add("container");
 
-document.body.appendChild(component());
+root.append(href);
+href.append(icon);

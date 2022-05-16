@@ -6,7 +6,8 @@
   "scripts": {
     "build:dev": "webpack build --config webpack.dev.js",
     "build:prod": "webpack build --config webpack.prod.js",
-    "watch": "webpack serve --config webpack.dev.js"
+    "watch": "webpack serve --config webpack.dev.js",
+    "watch:prod": "webpack serve --config webpack.prod.js"
   },
   "keywords": [
     "webpack",

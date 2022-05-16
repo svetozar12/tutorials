@@ -27,13 +27,18 @@ const config = {
       },
     ],
   },
-  devtool: "inline-source-map",
-  devServer: {
-    static: "./dist",
-  },
+
   optimization: {
     runtimeChunk: "single",
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      title: "WebPack-ts",
+      template: "./src/view/index.html",
+      filename: "./index.html",
+    }),
+  ],
 };
 
 module.exports = config;
