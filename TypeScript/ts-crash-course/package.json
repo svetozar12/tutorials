@@ -1,0 +1,13 @@
+{
+  "name": "ts-crash-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // Routes
 app.use("/api", index);
-const PORT = 3000;
+const PORT = 3001;
 
 app.listen(PORT, () => {
   console.log(`Dev server on: http://localhost:${PORT}`);

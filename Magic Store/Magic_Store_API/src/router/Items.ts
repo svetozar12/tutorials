@@ -17,7 +17,8 @@ items.get("/:_id", async (req, res) => {
 items.get("/", async (req, res) => {
   try {
     const ItemsInStore = await MagicItem.find();
-    if (ItemsInStore.length <= 0) return res.send("No magic items here :(");
+    if (ItemsInStore.length <= 0)
+      return res.status(404).send("No magic items here :(");
     return res.status(200).json({ data: ItemsInStore });
   } catch (error) {
     return res.status(501).send("Internal Server Error");
