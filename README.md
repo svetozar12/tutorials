@@ -1,17 +1,11 @@
-<h1 align="center">Welcome to DSA 👋</h1
-> Repo about practising and learning new stuff
+<!-- Begginer -->
 
-## Author
+# Interfaces
 
-👤 **Svetozar Gospodinov**
+# Types
 
-- Website: [Website](https://react-site-portfolio.netlify.app/)
-- Twitter: [@svetozar gospodinov](https://twitter.com/svetozargospod1)
-- Youtube: [Svetozar Gospodinov](https://www.youtube.com/channel/UC013pfRb3BFn9XnXZwVuLCg)
-- Github: [@svetozar12](https://github.com/svetozar12)
+# Unions
 
-## Show your support
+<!-- Advanced -->
 
-Give a ⭐️ if this project helped you!
-
----
+# Generics
