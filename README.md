@@ -1,9 +1,11 @@
 <h1 align="center">Welcome to DSA 👋</h1
 > Repo about practising and learning new stuff
-# Check branches !!!
-## Author
 
 👤 **Svetozar Gospodinov**
+
+# Check branches !!!
+
+## Author
 
 - Website: [Website](https://react-site-portfolio.netlify.app/)
 - Twitter: [@svetozar gospodinov](https://twitter.com/svetozargospod1)
