@@ -17,3 +17,7 @@ jobs:
         run: yarn
       - name: Run tests
         run: yarn test
+      - name: Deploy
+        run: railway up
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
