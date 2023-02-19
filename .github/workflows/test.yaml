@@ -17,9 +17,7 @@ jobs:
         run: yarn
       - name: Run tests
         run: yarn test
-      - name: Install railway cli
-        run: yarn add @railway/cli
       - name: Deploy
-        run: railway up
+        run: npx railway up
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
