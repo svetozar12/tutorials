@@ -19,7 +19,7 @@ bookRouter.post("/", (req, res) => {
     author: req.body.author,
   };
   books.push(book);
-  return res.status(204).json(book);
+  return res.status(201).json(book);
 });
 
 bookRouter.put("/:id", (req, res) => {
