@@ -1,14 +1,10 @@
 import express from "express";
-import router from "./routes";
-import { initSwagger } from "./swagger";
+import bookRouter from "./routes";
 
-const app = express();
-
+export const app = express();
 const PORT = 4000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-app.use(router);
-initSwagger(app);
+app.use("/book", bookRouter);
 app.listen(PORT, () => console.log("Listening", PORT));
