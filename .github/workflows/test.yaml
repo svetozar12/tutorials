@@ -1,0 +1,19 @@
+name: Book API
+on:
+  push:
+    branches:
+      - "ci/cd-nodejs"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use NodeJs
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+      - name: Install dependecies
+        run: yarn
+      - name: Run tests
+        run: yarn tests
