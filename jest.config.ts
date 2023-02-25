@@ -10,5 +10,6 @@ export default {
     "^.+\\.[tj]s$": "ts-jest",
   },
   moduleFileExtensions: ["ts", "js", "html"],
+
   testTimeout: 10000,
 };
